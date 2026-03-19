@@ -1,0 +1,8 @@
+:root{
+    --bg--color: #9042f5
+}
+
+body{
+    background-color: var(--bg--color);
+}
+
