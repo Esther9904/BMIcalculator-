@@ -2,12 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body>
-        <h1> <em>MY PORTFOLIO</em> </h1>
-        <div class="aboutme">
-            
-        </div>
+        <h1> <em>BMI CALCULATOR</em> </h1>
+        <div>
+            <label for="weight"> Enter your weight:</label>
+            <input type="number" id="weight" placeholder="Weight in kg">
+            <label for="height"> Enter your height:</label>
+            <input type="number" id="height" placeholder="height in meters">
 
+            <button onclick="BodyMassIndex()">BMI calculator</button>
+            <p id="result"></p>
+        </div>
+        
+        <script src="Bmi.js"></script>
     </body>
+    
 </html>
