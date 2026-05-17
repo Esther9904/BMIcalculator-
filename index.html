@@ -6,14 +6,20 @@
     </head>
     <body>
         <h1> <em>BMI CALCULATOR</em> </h1>
-        <div>
-            <label for="weight"> Enter your weight:</label>
-            <input type="number" id="weight" placeholder="Weight in kg">
-            <label for="height"> Enter your height:</label>
-            <input type="number" id="height" placeholder="height in meters">
-
-            <button onclick="BodyMassIndex()">BMI calculator</button>
-            <p id="result"></p>
+        <div class="container">
+            <div class="main-box">
+                <div class="wlabel">
+                    <label for="weight"> Enter your weight:</label>
+                    <input type="number" id="weight" placeholder="Weight in kg">
+                </div>
+                
+                <div id="label">
+                    <label for="height"> Enter your height:</label>
+                    <input type="number" id="height" placeholder="height in meters">
+                </div>
+                <button onclick="BodyMassIndex()">BMI calculator</button>
+                <p id="result"></p>
+            </div>
         </div>
         
         <script src="Bmi.js"></script>

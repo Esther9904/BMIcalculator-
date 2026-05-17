@@ -6,3 +6,39 @@ body{
     background-color: var(--bg--color);
 }
 
+/* .main-box{
+    border: solid 2px blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.container{
+    height: 100vh;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    background-color: aliceblue;
+    
+    
+}
+
+.wlabel{
+    padding-bottom: 50px;
+}
+label,input,button{
+    font-size: larger;
+    
+}
+
+
+
