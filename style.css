@@ -3,21 +3,21 @@
 }
 
 body{
-    background-color: var(--bg--color);
+    background-image: url('privategarden.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: var(--bg--color); */
 }
 
-/* .main-box{
-    border: solid 2px blanchedalmond;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
 
 .container{
     height: 100vh;
     border: solid 2px black;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,16 +27,18 @@ body{
     width: 400px;
     height: 300px;
     padding: 30px;
-    background-color: aliceblue;
-    
-    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur (10px); 
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.wlabel{
+.wlabel,.label{
     padding-bottom: 50px;
 }
 label,input,button{
     font-size: larger;
+    border-radius: 20px;
     
 }
 
