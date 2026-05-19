@@ -13,6 +13,14 @@ body{
     /* background-color: var(--bg--color); */
 }
 
+.step{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
 
 .container{
     height: 100vh;

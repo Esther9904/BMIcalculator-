@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title> BODY MASS INDEX CALCULATOR</title>
         <link rel="stylesheet" href="style.css">
         
     </head>
     <body>
         <h1 style="color: blueviolet;"> <em>BMI CALCULATOR</em> </h1>
         <div class="container">
-            <div class="main-box">
+            <div id="step1" class="main-box step active">
+                <div class="wlabel">
+                    <label for="name"> Enter your name:</label>
+                    <input type="text" id="name" placeholder="Enter first name">
+                </div>
+                
+                <div class="label">
+                    <label for="email"> Enter your E-mail:</label>
+                    <input type="email" id="email" placeholder="Enter E-mail">
+                </div>
+                <button onclick="NextButton()">NEXT</button>
+            </div>
+
+        
+            <div id="step2"  class="main-box step">
                 <div class="wlabel">
                     <label for="weight"> Enter your weight:</label>
                     <input type="number" id="weight" placeholder="Weight in kg">
@@ -21,6 +36,7 @@
                 <p id="result"></p>
             </div>
         </div>
+        
         
         <script src="Bmi.js"></script>
     </body>
