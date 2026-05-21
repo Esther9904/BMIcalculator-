@@ -1,6 +1,5 @@
 const NextButton = () => {
     const name = document.getElementById("name").value;
-    const message = document.getElementById("message");
     const email = document.getElementById("email");
 
     const lettersOnly = /^[A-Za-z]+$/;
@@ -20,8 +19,6 @@ const NextButton = () => {
     document.getElementById("step2").classList.add("active");
     
 }
-
-
 
 function BodyMassIndex(){
     let weight = document.getElementById("weight").value;
