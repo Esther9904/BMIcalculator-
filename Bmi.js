@@ -23,6 +23,22 @@ const NextButton = () => {
 function BodyMassIndex(){
     let weight = document.getElementById("weight").value;
     let height = document.getElementById("height").value;
-    Bmi = weight/(height**2)
-    document.getElementById("result").textContent = "your BMI is:" + Bmi
+    let num= weight/(height**2)
+    let Bmi = Math.ceil(num * 10)/10;
+    if (Bmi < 18.5){
+        document.getElementById("status").innerHTML = "Status: Underweight"
+    }
+    if (Bmi >= 18.5 && Bmi <= 24.9){
+        document.getElementById("status").innerHTML = "Status: Healthy weight"
+    }
+    if (Bmi >= 25.0 && Bmi <=29.9){
+        document.getElementById("status").innerHTML = "Status: Overweight"
+    }
+    if (Bmi >= 30.0){
+        document.getElementById("status").innerHTML = "Status: Obese"
+    }
+
+    document.getElementById("step2").classList.remove("active")
+    document.getElementById("step3").classList.add("active")
+    document.getElementById("result").textContent = Bmi
 }
