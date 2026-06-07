@@ -1,14 +1,17 @@
 const NextButton = () => {
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email");
+    const email = document.getElementById("email").value;
 
     const lettersOnly = /^[A-Za-z]+$/;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
 
     if (!lettersOnly.test(name)) {
         alert("Only letters are allowed. No spaces, numbers or symbols.")
         return;   
     } 
-    if(!email.checkValidity()){
+    if(!regex.test(email)){
         alert("Enter valid Email address")
         return;
     }
